@@ -6,10 +6,9 @@ import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 
 class SplashActivity: AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-        startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
 }
