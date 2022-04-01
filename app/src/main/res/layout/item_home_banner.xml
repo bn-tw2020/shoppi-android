@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="26dp"
             android:layout_marginBottom="7dp"
-            android:background="@color/shoppi_grey_02"
+            android:background="@{banner.badge.backgroundColor}"
             android:paddingStart="7dp"
             android:paddingTop="1dp"
             android:paddingEnd="7dp"
@@ -115,13 +115,13 @@
 
         <TextView
             android:id="@+id/tv_banner_detail_product_discount_price"
+            discountRate="@{banner.productDetail.discountRate}"
+            priceAmount="@{banner.productDetail.price}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             app:layout_constraintBottom_toBottomOf="@id/tv_banner_detail_product_discount_rate"
             app:layout_constraintStart_toEndOf="@id/tv_banner_detail_product_discount_rate"
-            priceAmount="@{banner.productDetail.price}"
-            discountRate="@{banner.productDetail.discountRate}"
             tools:text="89,000원" />
 
         <TextView
