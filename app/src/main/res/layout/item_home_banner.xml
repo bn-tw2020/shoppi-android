@@ -73,7 +73,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
-            android:text="@{banner.productDetail.thumbnailImageUrl}"
+            imageUrl="@{banner.productDetail.thumbnailImageUrl}"
             app:layout_constraintStart_toStartOf="@id/bg_banner_product_detail"
             app:layout_constraintTop_toTopOf="@id/bg_banner_product_detail" />
 
